@@ -7,10 +7,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-mode="light">
+    <html lang="th" data-mode="light">
       <body>
         <Providers>
-          <main className="relative">{children}</main>
+          <main className="relative overflow-hidden">{children}</main>
         </Providers>
       </body>
     </html>

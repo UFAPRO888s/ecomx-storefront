@@ -8,6 +8,7 @@ import DropdownMenu from "@modules/layout/components/dropdown-menu"
 import SideMenu from "@modules/layout/components/side-menu"
 import MobileMenu from "@modules/mobile-menu/templates"
 import DesktopSearchModal from "@modules/search/templates/desktop-search-modal"
+import Image from "next/image"
 import Link from "next/link"
 
 const Nav = () => {
@@ -34,9 +35,9 @@ const Nav = () => {
           <div className="flex items-center h-full">
             <Link
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="flex gap-2 items-center font-bold txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
             >
-              Medusa Store
+             <Image className="w-10 h-auto object-contain" src={"/logox.png"} alt="" width={100} height={100} /> ChangYed Store
             </Link>
           </div>
 
@@ -50,7 +51,7 @@ const Nav = () => {
                 />
               )}
               <Link className="hover:text-ui-fg-base" href="/account">
-                Account
+                สมาชิก
               </Link>
             </div>
             <CartDropdown />
